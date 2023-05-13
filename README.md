@@ -29,7 +29,27 @@
 ## Installation
 
 ```bash
+$ cd Desktop
+$ git clone https://github.com/dev-Anamul/nest-cqrs-crud.git
+$ cd nest-cqrs-crud
+```
+
+## Please check mongodb server is running or not
+
+```bash
+$ sudo systemctl status mongod
+```
+
+"if Mongodb server is running run the following command"
+
+```bash
 $ yarn install
+```
+
+"or start the mongodb server and then continue"
+
+```bash
+$ sudo systemctl start mongod
 ```
 
 ## Running the app
@@ -43,19 +63,6 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
 ```
 
 ## Support
